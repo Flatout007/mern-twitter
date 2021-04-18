@@ -94,3 +94,5 @@ router.get('/current', passport.authenticate('jwt', { session: false }), (req, r
         email: req.user.email
     });
 })
+
+module.exports = router;
